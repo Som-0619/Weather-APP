@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Animated Background -->
+  <div class="background"></div>
+
+  <!-- Main weather container -->
+  <div class="weather-container">
+    <h1 class="app-title">Weather</h1>
+
+    <div class="weather-info">
+      <input type="text" id="city-input" placeholder="Enter name...">
+      <button onclick="getWeather()">Check Weather</button>
+
+      <div id="weather-details" class="fade-in">
+        <!-- Weather data appears here -->
+      </div>
+
+      <div class="extra-metrics" id="extra-metrics">
+        <!-- UV, Wind, Humidity go here -->
+      </div>
+    </div>
+
+    <div class="wind-animation">
+    </div>
+  </div>
+</body>
+
+</html>
